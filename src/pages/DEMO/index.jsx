@@ -3,6 +3,9 @@ import React from "react";
 import { Button, Input, Text } from "components";
 import FrameThreeInputwithlabel from "components/FrameThreeInputwithlabel";
 
+const test = ()=>{
+alert("我是button!")
+}
 const DEMOPage = () => {
   return (
     <>
@@ -27,7 +30,7 @@ const DEMOPage = () => {
           ></Input>
         </div>
         <FrameThreeInputwithlabel className="flex flex-col gap-2 items-start justify-start md:px-5 w-[312px]" />
-        <Button className="cursor-pointer leading-[normal] min-w-[86px] text-base text-center">
+        <Button onClick={test} className="cursor-pointer leading-[normal] min-w-[86px] text-base text-center">
           儲存
         </Button>
       </div>
